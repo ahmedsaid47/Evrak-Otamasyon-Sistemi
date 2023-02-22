@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #30d5c8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController"> 
+   <children>
+      <Separator layoutX="15.0" layoutY="2.0" prefHeight="24.0" prefWidth="570.0">
+         <effect>
+            <Shadow blurType="ONE_PASS_BOX" height="7.31" radius="4.9825" width="14.62" />
+         </effect>
+      </Separator>
+      <Separator layoutX="572.0" layoutY="13.0" orientation="VERTICAL" prefHeight="374.0" prefWidth="26.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="7.31" radius="4.9825" width="14.62" />
+         </effect>
+      </Separator>
+      <Separator layoutX="2.0" layoutY="12.0" orientation="VERTICAL" prefHeight="374.0" prefWidth="26.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="0.0" radius="3.155" width="14.62" />
+         </effect>
+      </Separator>
+      <Separator layoutX="13.0" layoutY="370.0" prefHeight="32.0" prefWidth="570.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="0.0" radius="3.155" width="14.62" />
+         </effect>
+      </Separator>
+      <Pane layoutX="52.0" layoutY="40.0" prefHeight="321.0" prefWidth="496.0" style="-fx-background-color: #000000; -fx-background-radius: 50;" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="40.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <ImageView fx:id="myImageView" fitHeight="109.0" fitWidth="229.0" layoutX="191.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resim/ablem.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="girisLabel" layoutX="173.0" layoutY="117.0" prefHeight="35.0" prefWidth="149.0" text="Giriş Ekranı" textFill="#30d5c8">
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mailField" accessibleHelp="lab" layoutX="174.0" layoutY="171.0" promptText="akjdadh1545@gmail.com" />
+            <TextField fx:id="sifreField" layoutX="174.0" layoutY="224.0" promptText="**************" />
+            <Label layoutX="175.0" layoutY="152.0" text="e-posta" textFill="WHITE" />
+            <Label layoutX="174.0" layoutY="207.0" text="şifre" textFill="WHITE" />
+            <Button fx:id="girisYapButton" layoutX="216.0" layoutY="266.0" mnemonicParsing="false" onAction="#butonKod" style="-fx-background-color: #216477;" text="Giriş yap" textFill="WHITE" />
+            <Button fx:id="kaydolButton" layoutX="219.0" layoutY="295.0" mnemonicParsing="false" onAction="#kayıtButon" style="-fx-background-color: #000000;" text="Kaydol" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="924.0" style="-fx-background-color: #30d5c8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Child1Controller">
+   <children>
+      <Pane fx:id="useRadioButton" layoutX="245.0" layoutY="53.0" prefHeight="498.0" prefWidth="234.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <TextField fx:id="sifreField" layoutX="43.0" layoutY="194.0" text="Şifre" />
+            <TextField fx:id="isimField" layoutX="43.0" layoutY="94.0" text="İsim" />
+            <TextField fx:id="numaraField" layoutX="43.0" layoutY="143.0" text="Numara" />
+            <TextField fx:id="mailField" layoutX="43.0" layoutY="245.0" text="E-Posta" />
+            <Label layoutX="72.0" layoutY="49.0" text="Kullanıcı Ekle" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="userEkleButton" layoutX="98.0" layoutY="360.0" mnemonicParsing="false" onAction="#EkleButon" style="-fx-background-color: #30d5c8;" text="Ekle" />
+            <Button fx:id="temizleButton" layoutX="78.0" layoutY="435.0" mnemonicParsing="false" onAction="#temizleButon" opacity="0.47" prefHeight="0.0" prefWidth="78.0" style="-fx-background-color: #30d5c8;" text="Sıfırla" />
+            <RadioButton fx:id="adminRadioButton" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="45.0" layoutY="292.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="61.0" text="Admin" textFill="WHITE" />
+            <RadioButton fx:id="userButton" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="117.0" layoutY="292.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="61.0" text="User" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="500.0" layoutY="50.0" prefHeight="511.0" prefWidth="414.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <ListView fx:id="kullanıcılarListView" layoutX="17.0" layoutY="48.0" prefHeight="427.0" prefWidth="383.0" style="-fx-background-radius: 50;">
+               <effect>
+                  <InnerShadow choke="0.16" height="175.4" radius="104.1625" width="243.25" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ListView>
+            <Button layoutX="175.0" layoutY="479.0" mnemonicParsing="false" onAction="#silButon" opacity="0.82" style="-fx-background-color: #c10000;" text="Seçili olanı sil" textFill="#c7c7c7" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="94.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resim/mainİcon.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="13.0" layoutY="53.0" prefHeight="498.0" prefWidth="194.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <Button layoutX="17.0" layoutY="295.0" mnemonicParsing="false" onAction="#evrakekle" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Evrak Ekle" />
+            <ImageView fitHeight="182.0" fitWidth="161.0" layoutX="18.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resim/adminİcon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="17.0" layoutY="346.0" mnemonicParsing="false" onAction="#useradd" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Kullanıcı Ekle" />
+            <Button layoutX="17.0" layoutY="397.0" mnemonicParsing="false" onAction="#girisEkran" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Giriş Sayfası" />
+            <Button layoutX="16.0" layoutY="249.0" mnemonicParsing="false" onAction="#anaEkran" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Ana Sayfa" />
+            <Label fx:id="gisimLabel" layoutX="50.0" layoutY="181.0" prefHeight="26.0" prefWidth="94.0" text="User  Admin" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label fx:id="gnumaraLabel" layoutX="68.0" layoutY="207.0" prefHeight="26.0" prefWidth="60.0" text="170421015" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label layoutX="40.0" layoutY="463.0" opacity="0.61" text="from by serdengecti" textFill="#f2f2f2">
+               <font>
+                  <Font name="Ebrima" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="tarihgLabel" layoutX="846.0" layoutY="12.0" prefHeight="18.0" prefWidth="66.0" text="00/00/0000" />
+      <Button layoutX="85.0" layoutY="8.0" mnemonicParsing="false" onAction="#anaEkran" opacity="0.0" prefHeight="44.0" prefWidth="50.0" />
+   </children>
+</AnchorPane>

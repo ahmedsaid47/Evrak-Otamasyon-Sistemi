@@ -1,0 +1,4 @@
+12354*Öğrenci Belgesi*Öğrenci Bilgileri*3 Oca 2023*Ahmet Yılmaz*Öğrenci*Ahmet Yılmaz'ın öğrenci belgesi, öğrencinin bilgilerini içerir.*C:\Users\said\Desktop\Mentin's proje.docx
+23456*Akademik Profil*Öğretim Elemanı Bilgileri*3 Oca 2023*Ayşe Öztürk* Akademik*Ayşe Öztürk'ün akademik profili, öğretim elemanının akademik *C:\Users\said\Desktop\iiiiiiiii.txt
+67890*Kurum Stratejisi* Kurum Stratejisi*1 Oca 2023*Kurum Yönetimi* Finansal*Kurum yönetiminin kurum stratejisi, kurumun gelecekteki hedeflerini ve yönünü gösterir.*C:\Users\said\Downloads\deney-3.pdf
+Numara*Ad*Tür*8 Şub 2023*Sahip*Kategori*Açıklama*C:\Users\said\Desktop\Yeni Metin Belgesi.txt

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="924.0" style="-fx-background-color: #30d5c8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Child2Controller">
+   <children>
+      <Pane layoutX="256.0" layoutY="53.0" prefHeight="498.0" prefWidth="214.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <TextField fx:id="kategori" layoutX="32.0" layoutY="376.0" text="Kategori" />
+            <TextField fx:id="tarih" layoutX="30.0" layoutY="267.0" text="Tarih" />
+            <TextField fx:id="ad" layoutX="31.0" layoutY="155.0" text="Ad" />
+            <TextField fx:id="tur" layoutX="30.0" layoutY="208.0" text="Tür" />
+            <TextField fx:id="sahip" layoutX="31.0" layoutY="320.0" text="Sahip" />
+            <Label layoutX="72.0" layoutY="22.0" text="Evrak Ekle" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numara" layoutX="33.0" layoutY="101.0" text="Numara" />
+         </children>
+      </Pane>
+      <Pane layoutX="480.0" layoutY="53.0" prefHeight="498.0" prefWidth="214.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <TextArea fx:id="aciklama" layoutX="33.0" layoutY="210.0" prefHeight="195.0" prefWidth="149.0" text="Açıklama" />
+            <Button layoutX="88.0" layoutY="412.0" mnemonicParsing="false" onAction="#EvrakEkleButon" style="-fx-background-color: #30d5c8;" text="Ekle" />
+            <Button layoutX="68.0" layoutY="459.0" mnemonicParsing="false" onAction="#temizleButon" opacity="0.47" prefHeight="0.0" prefWidth="78.0" style="-fx-background-color: #30d5c8;" text="Sıfırla" />
+            <TextField fx:id="adresField" layoutX="31.0" layoutY="156.0" text="evrak adresi" />
+            <Button fx:id="evrakSecButton" layoutX="31.0" layoutY="100.0" mnemonicParsing="false" onAction="#SecButon" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #30d5c8;" text="Evrak Seç" />
+            <Label layoutX="31.0" layoutY="139.0" text="Evrak Adresi" textFill="WHITE" />
+            <Label layoutX="70.0" layoutY="21.0" text="Evrak Ekle" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="701.0" layoutY="53.0" prefHeight="498.0" prefWidth="214.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <ListView fx:id="evrakListView" layoutX="15.0" layoutY="43.0" prefHeight="413.0" prefWidth="185.0" style="-fx-background-radius: 50;">
+               <effect>
+                  <InnerShadow choke="0.16" height="175.4" radius="104.1625" width="243.25" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ListView>
+            <Label layoutX="80.0" layoutY="15.0" prefHeight="17.0" prefWidth="60.0" text="Evraklar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="22.0" layoutY="53.0" prefHeight="498.0" prefWidth="194.0" style="-fx-background-radius: 50; -fx-background-color: #000000;">
+         <children>
+            <Button layoutX="17.0" layoutY="295.0" mnemonicParsing="false" onAction="#evrakekle" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Evrak Ekle" />
+            <ImageView fitHeight="177.0" fitWidth="169.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resim/userİcon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="17.0" layoutY="346.0" mnemonicParsing="false" onAction="#useradd" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Kullanıcı Ekle" />
+            <Button layoutX="17.0" layoutY="397.0" mnemonicParsing="false" onAction="#girisEkran" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Giriş Sayfası" />
+            <Button layoutX="16.0" layoutY="249.0" mnemonicParsing="false" onAction="#anaEkran" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #30d5c8;" text="Ana Sayfa" />
+            <Label fx:id="gisimLabel" layoutX="50.0" layoutY="188.0" prefHeight="26.0" prefWidth="94.0" text="User  Admin" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label fx:id="gnumaraLabel" layoutX="68.0" layoutY="207.0" prefHeight="26.0" prefWidth="60.0" text="170421015" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label layoutX="40.0" layoutY="463.0" opacity="0.61" text="from by serdengecti" textFill="#f2f2f2">
+               <font>
+                  <Font name="Ebrima" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="102.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resim/mainİcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="tarihgLabel" layoutX="846.0" layoutY="11.0" prefHeight="18.0" prefWidth="66.0" text="00/00/0000" />
+      <Button layoutX="94.0" layoutY="4.0" mnemonicParsing="false" onAction="#anaEkran" opacity="0.0" prefHeight="44.0" prefWidth="50.0" />
+   </children>
+</AnchorPane>
